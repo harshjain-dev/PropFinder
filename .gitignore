@@ -1,0 +1,42 @@
+  # OS
+  .DS_Store
+  Thumbs.db
+
+  # IntelliJ / Android Studio
+  .idea/
+  *.iml
+  *.ipr
+  *.iws
+  .cxx/
+  .externalNativeBuild/
+  captures/
+
+  # Gradle
+  .gradle/
+  **/build/
+  build/
+
+  # Local config
+  local.properties
+  *.keystore
+  *.jks
+
+  # Kotlin
+  .kotlin/
+
+  # Logs
+  *.log
+
+  # Android generated files
+  */src/main/generated/
+  */src/debug/generated/
+  */src/release/generated/
+
+  # KSP / kapt generated (already under build, but explicit if needed)
+  **/ksp/
+  **/generated/source/kapt/
+  **/generated/source/ksp/
+
+  # Test outputs / reports
+  **/test-results/
+  **/reports/
