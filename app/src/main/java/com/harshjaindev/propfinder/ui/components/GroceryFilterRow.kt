@@ -25,7 +25,7 @@ fun GroceryFilterRow(
     ) {
 
         // "All" filter
-        item(selectedCategoryId) {
+        item(key = "all_categories_filter") {
             FilterChip(
                 selected = selectedCategoryId == null,
                 onClick = { onCategorySelected(null) },
@@ -33,9 +33,7 @@ fun GroceryFilterRow(
             )
         }
 
-        items(categories, key = {
-            it.id
-        }) { category ->
+        items(categories, key = { it.id }) { category ->
             FilterChip(
                 selected = selectedCategoryId == category.id,
                 onClick = {
