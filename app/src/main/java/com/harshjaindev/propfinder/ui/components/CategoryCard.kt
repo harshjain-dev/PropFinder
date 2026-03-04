@@ -25,6 +25,8 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -46,6 +48,9 @@ fun CategoryCard(
     onClick: (id: String) -> Unit,
     onAddItem: (item: GroceryItem) -> Unit
 ) {
+    val focusManager = LocalFocusManager.current
+    val keyboardController = LocalSoftwareKeyboardController.current
+
     Column(
         modifier = modifier
             .fillMaxWidth()
@@ -79,6 +84,8 @@ fun CategoryCard(
                         updatedAt = System.currentTimeMillis()
                     )
                 )
+                focusManager.clearFocus(force = true)
+                keyboardController?.hide()
             },
             enabled = query?.isNotEmpty() == true
         ) {

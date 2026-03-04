@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface GroceryDao {
 
-    @Query("SELECT * FROM grocery_item")
+    @Query("SELECT * FROM grocery_item ORDER BY updatedAt DESC")
     fun observeAll(): Flow<List<GroceryItemEntity>>
 
 
