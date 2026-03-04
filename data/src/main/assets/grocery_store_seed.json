@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "storeId": "store_default",
+    "storeName": "Local Grocery Seed",
+    "createdAt": "2026-03-03T00:00:00Z",
+    "version": 1
+  },
+  "categories": [
+    {
+      "categoryId": "milk",
+      "displayName": "Milk",
+      "icon": "ic_milk",
+      "color": "#FFF3E0",
+      "accentColor": "#FB8C00",
+      "description": "Dairy & milk products",
+      "isSelected": true
+    },
+    {
+      "categoryId": "vegetables",
+      "displayName": "Vegetables",
+      "icon": "ic_vegetables",
+      "color": "#E8F5E9",
+      "accentColor": "#43A047",
+      "description": "Fresh vegetables",
+      "isSelected": false
+    },
+    {
+      "categoryId": "fruits",
+      "displayName": "Fruits",
+      "icon": "ic_fruits",
+      "color": "#FFF8E1",
+      "accentColor": "#F4511E",
+      "description": "Fresh fruits",
+      "isSelected": false
+    },
+    {
+      "categoryId": "breads",
+      "displayName": "Breads",
+      "icon": "ic_bread",
+      "color": "#FFFDE7",
+      "accentColor": "#8D6E63",
+      "description": "Breads & bakery",
+      "isSelected": false
+    },
+    {
+      "categoryId": "meats",
+      "displayName": "Meats",
+      "icon": "ic_meat",
+      "color": "#FFEBEE",
+      "accentColor": "#D32F2F",
+      "description": "Meat & poultry",
+      "isSelected": false
+    }
+  ],
+  "groceryList": []
+}
